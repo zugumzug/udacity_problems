@@ -19,7 +19,7 @@ def make_converter(match, replacement):
 
 def apply_converter(converter, string):
   	if string.find(converter[0]) == -1:
-    	return string
+		return string
 	else:
 		string = string.replace(converter[0], converter[1])
 		return apply_converter(converter, string)
